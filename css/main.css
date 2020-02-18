@@ -1,0 +1,291 @@
+html
+{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+#header
+{
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+    background-color: darkblue;
+    //opacity: 10%;
+    color: yellow;
+    min-height: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#header-contents
+{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    box-sizing: border-box;
+    border: 5px solid yellow;
+}
+
+#top-logo
+{
+    display: block;
+    padding: 0px;
+    margin: 4px auto;
+    width: 5em;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#site-title
+{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 4px;
+}
+
+#site-sub
+{
+    display: block;
+    margin: 4px;
+}
+
+#content-body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Raleway";
+    background-color: darkblue;
+    //opacity: 10%;
+    //background-image: url("./Assets/1.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+#nav
+{
+    margin: 0px;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    box-shadow: 0px 3px 3px #bdbdbd;
+}
+
+#nav-logo
+{
+    display: block;
+    margin: 4px;
+    float: left;
+    width: 1.2em;
+    height: auto;
+    max-width: 1.2em;
+    max-height: 1.2em;
+}
+
+ul
+{
+    background-color: darkblue;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+}
+
+a
+{
+    color: yellow;
+    text-decoration: none;
+}
+
+li
+{
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+li a
+{
+    display: block;
+    text-align: center;
+    width: 3em;
+    padding: 4px;
+    margin: 0px 4px;
+    overflow: hidden;
+}
+
+li a:active, li a:hover
+{
+    background-color: yellow;
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.section-title
+{
+    padding: 0px;
+    font-size: 1rem;
+    border-bottom: 1px solid #bdbdbd;
+    font-weight: bold;
+    color: #212121;
+    margin: 0px;
+}
+
+.main-content
+{
+    color: #757575;
+    margin: 0px;
+    border: none;
+    display: block;
+    padding: 0px;
+}
+
+#content
+{
+    padding: 8px;
+    margin: 0px;
+    background-color: white;
+    text-align: justify;
+}
+
+#credits
+{
+    text-align: left;
+}
+
+.footer
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin: 0px;
+    padding: 4px 0px;
+    background-color: white;
+    border-top: 1px solid #bdbdbd;
+}
+
+.panel
+{
+    padding: 8px;
+    margin: 8px 0px;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px #bdbdbd;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover, .panel:active, #cardlist:hover, #cardlist:active
+{
+    box-shadow: 0px 4px 4px #bdbdbd;
+}
+
+.panel-content
+{
+    border: none;
+    padding: 0px;
+    display: block;
+    margin: 0px;
+}
+
+#level
+{
+    width: calc(100% - 8px);
+    height: 2%;
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid #bdbdbd;
+    //box-shadow: 0px 1px 3px #bdbdbd inset;
+}
+
+#exp
+{
+    width: 0%;
+    max-width: calc(100% - 8px);
+    padding: 4px;
+    background-color: yellow;
+    border-radius: 8px;
+    display: block;
+    color: #212121;
+    white-space: nowrap;
+    overflow: visible;
+    transition: width 3s;
+    //border: 1px solid #bdbdbd;
+    //box-shadow: 0px 1px 3px #bdbdbd;
+}
+
+#disclaimer
+{
+    margin: 4px;
+    font-size: 0.75rem;
+}
+
+sub
+{
+    color: #bdbdbd;
+}
+
+#reset
+{
+    color: darkred;
+    visibility: hidden;
+}
+
+#cardlist
+{
+    margin: 0px;
+    margin-top: 8px;
+    padding: 8px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px #bdbdbd;
+    //background-color: yellow;
+    
+    transition: box-shadow 0.5s;
+}
+
+/*#gbl, #lcl
+{
+    font-family: monospace;
+    white-space: pre-wrap;
+    text-align: justify;
+}*/
+
+#list-content
+{
+    width: calc(100%);
+    height: calc(1em + 200px + 16px + 8px);
+    display: block;
+    //margin: 8px;
+    padding: 0px;
+    border: none;
+    //background-color: orange;
+}

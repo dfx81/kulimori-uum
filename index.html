@@ -1,0 +1,137 @@
+<!doctype html>
+
+<html lang="ms" xml:lang="ms" xmlns= "http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Kulimori App</title>
+<meta charset="UTF-8"/>
+<meta name="google-site-verification" content="mMlNPLDPu9GGhmDBt-eGG98Bb1s5gNbjHG2DWaotUx0"/>
+<meta http-equiv="content-language" content="ms"/>
+<meta name="description" content="Kulimori App"/>
+<meta name="keywords" content="kulinari, memori, kenegaraan malaysia, flashcard"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"/>
+
+<link rel="shortcut icon" href="res/favicon.ico"/>
+<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico"/>
+<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png"/>
+<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png"/>
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png"/>
+<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"/>
+<link rel="apple-touch-icon" href="/favicon-57.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png"/>
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png"/>
+<meta name="msapplication-TileColor" content="#FFFFFF"/>
+<meta name="msapplication-TileImage" content="/favicon-144.png"/>
+<meta name="msapplication-config" content="/browserconfig.xml"/>
+
+</head>
+
+<body>
+<div id="header">
+<div id="header-contents">
+  <img id="top-logo" src="res/logo.png"></img>
+  <p id="site-title">Kulimori App</p>
+  <p id="site-sub">Selamat Datang!<br/><br/>- &#x2694 -</p>
+</div>
+</div>
+<div id="content-body">
+<div id="nav">
+<ul>
+  <img id="nav-logo" src="res/logo.png"></img>
+  <li><a onclick="window.location.replace('https://kulimori-uum.web.app/Kulimori.html')">Main</a></li>
+  <li><a onclick="document.getElementById('list').scrollIntoView()">Kad</a></li>
+  <li><a onclick="document.getElementById('leaderboard').scrollIntoView()">Skor</a></li>
+</ul>
+</div>
+<div id="content">
+<div id="list" class="section-title">
+  <p>Senarai Kad</p>
+</div>
+<div id="cardlist">
+<iframe id="list-content" src="Cards.html"></iframe>
+</div>
+
+<div id="profile" class="section-title">
+  <p>Akaun</p>
+</div>
+<div class="panel">
+<p id="name" class="section-title">Profil Anda</p>
+<div class="main-content">
+<div class="panel-content">
+<p id="user"></p>
+<p id="id"></p>
+<div id="level">
+<div id="exp">Level</div>
+</div>
+<div id="disclaimer">AMARAN: Akaun anda akan dipadam jika "site data" pelayar web anda dipadam.<br/>
+<sub onclick="change()">ubah nama</sub>&nbsp&nbsp&nbsp
+<sub id="reset" onclick="hardReset()">reset akaun</sub></div>
+</div>
+</div>
+</div>
+
+<div id="leaderboard" class="section-title">
+  <p>Statistik</p>
+</div>
+<div class="main-content">
+<div class="panel">
+<p id="name" class="section-title">Markah Anda</p>
+<div class="panel-content">
+<p id="lcl">...</p>
+</div>
+</div>
+<div class="panel">
+<p class="section-title">Markah Global</p>
+<div class="panel-content">
+<p id="gbl">...</p>
+</div>
+</div>
+
+</div>
+<div class="section-title">
+  <p>Tentang Kulimori</p>
+</div>
+<div class="main-content">
+<p>Selamat Datang Ke Kulimori</p>
+<p>Kulimori adalah sebuah projek kumpulan bagi subjek Kenegaraan Malaysia UUM. Projek ini cuba untuk menggabungkan konsep "flashcards" dan permainan memori yang bertemakan makanan-makanan tradisional Malaysia.</p>
+
+<div class="panel" id="credits">
+<p class="section-title">Kumpulan Kami</p>
+<div class="panel-content">
+<p>
+- Muhd. Danial Fitri b. Ghazali (272868)<br/>
+- Nur Hanis bt. Zolkipli (270611)<br/>
+- Intan Nur Maisarah bt. Mohd. Azam (270456)<br/>
+- Nur Aqilah Binti Ahmad Nazari (270857)<br/>
+- Siti Rokiah bt. Yusof (270545)<br/>
+- Khanittha A/P Eh Win (269570)<br/>
+- Juliney A/P Sen (272828)<br/>
+- Mary Santina A/P Chandrasagaran (250750)<br/>
+- Nur Natasya Hasni bt. Mohd Rosle (270747)</p>
+
+<sub>Hubungi Kami: kulimori.app.uum@gmail.com</sub>
+</div>
+</div>
+</div>
+
+<div class="footer">
+  <p>Kulimori App, &copy 2019. Firebase & Font Raleway oleh Google.</p>
+</div>
+</div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+<script src="js/script.js"></script>
+</html>
