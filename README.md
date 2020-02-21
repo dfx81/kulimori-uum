@@ -1,10 +1,10 @@
-#Kulimori
+# Kulimori
 
 Kulimori is a web app created by a group of students
 in UUM as part of their Malaysian Nationhood Assignment.
 
-Lead Developer: Danial (dfx)
-Assets & Research: Rest of Kulimori Team
+- Lead Developer: Danial (dfx)
+- Assets & Research: Rest of Kulimori Team
 
 DISCLAIMER: The images used on the website (other than the logo)
 are NOT ours.
